@@ -1,0 +1,59 @@
+.q-header-container {
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+}
+
+.q-header-title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.q-header-title p {
+  color: #6b7280;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+/* Thống kê */
+.q-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.q-card {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+}
+
+.q-card strong {
+  font-size: 20px;
+  display: block;
+}
+
+.q-card p {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Màu biểu tượng */
+.q-card.orange svg {
+  color: #f97316;
+}
+.q-card.green svg {
+  color: #22c55e;
+}
+.q-card.blue svg {
+  color: #3b82f6;
+}

@@ -1,0 +1,40 @@
+.qa-header {
+  padding: 24px 0;
+  margin-bottom: 20px;
+}
+
+.qa-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.qa-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.qa-subtitle {
+  font-size: 15px;
+  color: #6b7280;
+}
+
+.qa-new-btn {
+  background: #111827;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.qa-new-btn:hover {
+  background: #1f2937;
+}

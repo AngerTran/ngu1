@@ -1,0 +1,105 @@
+.sb-edit-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.sb-edit-header {
+  margin-bottom: 20px;
+}
+
+/* ✅ Nút quay lại */
+.sb-edit-back-btn {
+  background-color: #10b981;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+
+.sb-edit-back-btn:hover {
+  background-color: #059669;
+}
+
+.sb-edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sb-edit-form label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111827;
+}
+
+.sb-edit-form input,
+.sb-edit-form textarea,
+.sb-edit-form select {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f9fafb;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.sb-edit-form input:focus,
+.sb-edit-form textarea:focus,
+.sb-edit-form select:focus {
+  border-color: #10b981;
+}
+
+.sb-edit-form textarea {
+  resize: vertical;
+}
+
+.sb-edit-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.sb-edit-submit-btn {
+  background-color: #10b981;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sb-edit-submit-btn:hover {
+  background-color: #059669;
+}
+
+.sb-edit-cancel-btn {
+  background-color: #e5e7eb;
+  color: #374151;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sb-edit-cancel-btn:hover {
+  background-color: #d1d5db;
+}

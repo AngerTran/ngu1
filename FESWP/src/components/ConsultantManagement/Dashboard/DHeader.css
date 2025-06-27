@@ -1,0 +1,99 @@
+.dheader-container {
+  padding: 24px;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dheader-top h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.dheader-top p {
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.stats-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.stat-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-title {
+  color: #374151;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.stat-subtext {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.stat-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon svg {
+  stroke-width: 2;
+}
+
+.stat-icon.blue {
+  background-color: #e0edff;
+  color: #3b82f6;
+}
+
+.stat-icon.green {
+  background-color: #dcfce7;
+  color: #22c55e;
+}
+
+.stat-icon.orange {
+  background-color: #fff7ed;
+  color: #f97316;
+}
+
+.stat-icon.purple {
+  background-color: #f3e8ff;
+  color: #a855f7;
+}
+
+.stars {
+  font-size: 16px;
+  color: gold;
+  line-height: 1.2;
+}

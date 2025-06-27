@@ -1,0 +1,16 @@
+/* ManagerLayout.css */
+.manager-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f9fafb;
+  overflow: hidden;
+}
+
+.manager-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  max-height: 100vh;
+  background-color: #f9fafb;
+}

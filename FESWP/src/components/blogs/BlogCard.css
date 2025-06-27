@@ -1,0 +1,86 @@
+.blog-card {
+  border: 1px solid #d1f2e2;
+  border-radius: 12px;
+  background: #fff;
+  padding: 20px;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.blog-card.public:hover {
+  border-color: #10b981;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.blog-link-wrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  color: #666;
+}
+
+.badge {
+  background-color: #e7f9f2;
+  color: #057e56;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* Các trạng thái cho vai trò quản lý */
+.badge.pending {
+  background-color: #fff9db;
+  color: #b98d00;
+}
+.badge.published {
+  background-color: #e0f8ed;
+  color: #2b9b66;
+}
+.badge.rejected {
+  background-color: #ffe5e5;
+  color: #cc1f1a;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #062f2d;
+  margin: 0;
+}
+
+.excerpt {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #666;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+

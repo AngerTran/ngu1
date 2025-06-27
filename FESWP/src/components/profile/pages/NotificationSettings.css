@@ -1,0 +1,124 @@
+/* NotificationSettings.css */
+.info-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.info-header {
+  background: linear-gradient(to right, #10b981, #059669);
+  color: white;
+  padding: 24px 32px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.info-header h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.info-header p {
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.info-form {
+  padding: 32px;
+}
+
+h3 {
+  font-size: 17px;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+.notify-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.notify-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #111;
+}
+
+.notify-label p {
+  font-size: 14px;
+  color: #666;
+  margin: 2px 0 0;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #0f172a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(18px);
+}
+
+/* Checkboxes */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 12px;
+}
+
+.checkbox-group label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #0f172a;
+  cursor: pointer;
+}

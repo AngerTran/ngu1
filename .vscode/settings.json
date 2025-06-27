@@ -1,0 +1,5 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.checkstyle.configuration": "${workspaceFolder}\\Swp391_Project\\target\\checkstyle-checker.xml",
+    "java.configuration.updateBuildConfiguration": "interactive"
+}

@@ -1,0 +1,92 @@
+.report-section {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.report-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.report-card {
+  border-radius: 0.75rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.report-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+}
+
+.report-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.report-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.report-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.report-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Color background types */
+.bg-blue {
+  background-color: #eff6ff;
+}
+
+.bg-green {
+  background-color: #ecfdf5;
+}
+
+.bg-purple {
+  background-color: #f5f3ff;
+}
+
+.bg-orange {
+  background-color: #fff7ed;
+}
+
+/* Optional: icon coloring if needed globally */
+.text-blue-600 {
+  color: #2563eb;
+}
+.text-green-600 {
+  color: #16a34a;
+}
+.text-purple-600 {
+  color: #9333ea;
+}
+.text-orange-600 {
+  color: #ea580c;
+}

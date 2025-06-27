@@ -1,0 +1,144 @@
+.sm-table-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.sm-table-container h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.sm-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sm-table th,
+.sm-table td {
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.sm-table th {
+  background-color: #f7f7f8;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.sm-table tr:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.sm-table td {
+  font-size: 14px;
+  color: #222;
+}
+
+.sm-meta {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* ✅ Badges */
+.sm-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.sm-badge.green {
+  background-color: #e0f8ed;
+  color: #2b9b66;
+}
+
+.sm-badge.gray {
+  background-color: #e5e5e5;
+  color: #555;
+}
+
+.sm-badge.red {
+  background-color: #ffe0e0;
+  color: #d91e1e;
+}
+
+/* ✅ Nút thao tác */
+.sm-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sm-view-btn,
+.sm-delete-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Xem */
+.sm-view-btn {
+  background-color: #10b981;
+  color: white;
+}
+.sm-view-btn:hover {
+  background-color: #059669;
+}
+
+/* Xóa */
+.sm-delete-btn {
+  background-color: #ef4444;
+  color: white;
+}
+.sm-delete-btn:hover {
+  background-color: #dc2626;
+}
+
+/* ✅ Pagination */
+.sm-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.sm-pagination button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.sm-pagination button:hover:not(:disabled) {
+  background-color: #e5e5e5;
+}
+
+.sm-pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sm-pagination button.active {
+  background-color: #0056d2;
+  color: white;
+  font-weight: 600;
+  border-color: #0056d2;
+}

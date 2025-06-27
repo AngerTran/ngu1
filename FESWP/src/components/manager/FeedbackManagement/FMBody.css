@@ -1,0 +1,187 @@
+.fm-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px 0;
+}
+
+/* Card phản hồi */
+.feedback-card {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+/* Border trái theo trạng thái */
+.feedback-card.success {
+  border-left: 4px solid #22c55e; /* xanh */
+}
+.feedback-card.danger {
+  border-left: 4px solid #ef4444; /* đỏ */
+}
+.feedback-card.pending {
+  border-left: 4px solid #facc15; /* vàng */
+}
+
+/* Header */
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.user-icon {
+  margin-right: 6px;
+}
+
+.user-name {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.stars {
+  color: #fbbf24;
+  margin-right: 4px;
+}
+
+.rating {
+  color: #6b7280;
+  margin-right: 8px;
+}
+
+.badge.highlight {
+  background: #fef3c7;
+  color: #b45309;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-date {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.status-success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.status-pending {
+  background: #fef9c3;
+  color: #92400e;
+}
+
+.date {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Info line */
+.feedback-info {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Nội dung bình luận */
+.feedback-content {
+  margin-top: 12px;
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #111827;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.comment-icon {
+  margin-top: 2px;
+}
+
+/* Nút hành động */
+.feedback-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: #f3f4f6;
+  border-color: #cbd5e1;
+}
+
+.btn.danger {
+  color: #b91c1c;
+  border-color: #fca5a5;
+  background: #fee2e2;
+}
+
+/* PHÂN TRANG */
+.fm-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  margin-top: 24px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.page-btn,
+.page-number {
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: transparent;
+  border: none;
+  color: #374151;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.page-btn:disabled {
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.page-number.active {
+  background: #f3f4f6;
+  font-weight: 600;
+  border: 1px solid #d1d5db;
+}

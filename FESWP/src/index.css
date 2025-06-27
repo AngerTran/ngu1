@@ -1,0 +1,80 @@
+/* Reset và thiết lập toàn cục */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Thiết lập chung cho toàn bộ trang */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+/* Gỡ bỏ flex center mặc định từ Vite */
+body {
+  display: block;
+}
+
+/* Link */
+a {
+  font-weight: 500;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* Button */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #00986f;
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid rgba(0, 152, 111, 0.3);
+}
+
+/* Responsive font for small screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}

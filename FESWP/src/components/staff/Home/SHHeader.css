@@ -1,0 +1,82 @@
+/* SHHeader.css */
+.sh-header {
+  padding: 1.5rem;
+  background: #f9fafb;
+}
+
+.sh-header-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.sh-header-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.sh-header-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #111827;
+}
+
+.sh-header-title p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.sh-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sh-card {
+  flex: 1;
+  min-width: 200px;
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.sh-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.sh-card h2 {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.sh-card p {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Color themes */
+.sh-card.blue {
+  background: #2563eb;
+}
+
+.sh-card.green {
+  background: #10b981;
+}
+
+.sh-card.orange {
+  background: #d97706;
+}
+
+.sh-card.purple {
+  background: #8b5cf6;
+}

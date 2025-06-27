@@ -1,0 +1,134 @@
+.hero {
+  background: #f8fdfc;
+  padding: 60px 24px;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1400px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-badge {
+  background-color: #d1fae5;
+  color: #047857;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.hero-left h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.hero-left .highlight {
+  color: #10b981;
+}
+
+.hero-description {
+  color: #4b5563;
+  margin-bottom: 24px;
+  max-width: 500px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 24px;
+  color: #047857;
+  font-weight: bold;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #00986f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-outline {
+  background: white;
+  border: 2px solid #00986f;
+  color: #00986f;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Bên phải */
+.hero-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.feature-box {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.feature {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  align-items: start;
+}
+
+.feature .icon {
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-green {
+  color: #059669;
+  background-color: #d1fae5;
+}
+
+.icon-blue {
+  color: #2563eb;
+  background-color: #dbeafe;
+}
+
+.icon-purple {
+  color: #7c3aed;
+  background-color: #ede9fe;
+}
+

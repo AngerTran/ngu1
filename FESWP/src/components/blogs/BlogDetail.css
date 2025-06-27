@@ -1,0 +1,49 @@
+.blog-detail-wrapper {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.blog-detail-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.blog-detail-btn {
+  padding: 8px 16px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.blog-detail-btn:hover {
+  background-color: #059669;
+}
+
+.blog-detail-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #062f2d;
+  margin-bottom: 12px;
+}
+
+.blog-detail-meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.blog-detail-content {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+}

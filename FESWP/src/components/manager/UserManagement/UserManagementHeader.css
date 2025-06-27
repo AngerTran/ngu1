@@ -1,0 +1,58 @@
+.container {
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Header chứa tiêu đề và nút */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.top-right-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Nút chung */
+.btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+/* ✅ Nút Thêm người dùng mới: nền đen, chữ trắng */
+.user-add-btn {
+  background-color: #111827;
+  color: white;
+  border: none;
+}
+
+.add-btn:hover {
+  background-color: #1f2937;
+}

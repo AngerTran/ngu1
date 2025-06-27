@@ -1,0 +1,142 @@
+.user-page {
+  background-color: #f9fafb;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.user-table {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.table-head,
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1.5fr 0.9fr; /* tăng một chút chiều rộng cho cột thao tác */
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-head {
+  background-color: #f3f4f6;
+  font-weight: bold;
+  color: #4b5563;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.table-row {
+  font-size: 15px;
+  background-color: white;
+}
+
+.table-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  width: fit-content;
+}
+
+.status.active {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status.inactive {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+/* Bỏ dấu 3 chấm */
+.dots {
+  display: none;
+}
+
+/* Phân trang */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #111827;
+  color: white;
+  border-color: #111827;
+}
+
+/* Nút hành động: Xem - Sửa - Xóa */
+.action-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-btn,
+.edit-btn,
+.delete-btn {
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Xem - xanh lá */
+.view-btn {
+  background-color: #10b981;
+  color: white;
+}
+.view-btn:hover {
+  background-color: #059669;
+}
+
+/* Sửa - xanh dương */
+.edit-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+.edit-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Xóa - đỏ */
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+}
+.delete-btn:hover {
+  background-color: #dc2626;
+}

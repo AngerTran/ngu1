@@ -1,0 +1,28 @@
+.tr-container {
+  padding: 1rem 1.5rem;
+  background: #f9fbfc;
+  border-radius: 10px;
+}
+
+.tr-header {
+  margin-bottom: 1.5rem;
+}
+
+.tr-header h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1e3a8a;
+}
+
+.tr-header p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.tr-icon {
+  color: #1e40af;
+}

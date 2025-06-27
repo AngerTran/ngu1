@@ -1,0 +1,54 @@
+.performance-section {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.performance-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.performance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.performance-box {
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Nền màu riêng từng box */
+.perf-green {
+  background-color: #ecfdf5;
+}
+
+.perf-blue {
+  background-color: #eff6ff;
+}
+
+.perf-purple {
+  background-color: #f5f3ff;
+}
+
+.performance-value {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.performance-label {
+  font-size: 0.875rem;
+  color: #374151;
+  margin-top: 0.25rem;
+}

@@ -1,0 +1,132 @@
+.qf-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.qf-container section > h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.qf-card {
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.qf-card.pending {
+  border-left: 4px solid #f97316;
+}
+
+.qf-card.answered {
+  border-left: 4px solid #22c55e;
+}
+
+.qf-card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.qf-user,
+.qf-time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.qf-user .name {
+  font-weight: 600;
+}
+
+.qf-content {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.qf-answer {
+  background-color: #ecfdf5;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: #065f46;
+  margin-bottom: 10px;
+}
+
+.qf-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.qf-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tag-category {
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+.tag-pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.tag-answered {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.tag-green {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+/* Button */
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.btn-dark {
+  background-color: #111827;
+  color: white;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #1f2937;
+}

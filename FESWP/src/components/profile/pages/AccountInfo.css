@@ -1,0 +1,112 @@
+/* AccountInfo.css */
+.info-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.info-header {
+  background: linear-gradient(to right, #10b981, #059669);
+  color: white;
+  padding: 24px 32px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.info-header h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.info-header p {
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.info-form {
+  padding: 32px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.form-col {
+  flex: 1;
+  min-width: 240px;
+}
+
+.info-form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.info-form input[type="text"],
+.info-form input[type="password"],
+.info-form input:disabled {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.info-form input:focus {
+  border-color: #10b981;
+  outline: none;
+  background-color: #fff;
+}
+
+.account-status {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #059669;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.account-status .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #059669;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 24px 0;
+}
+
+.form-actions {
+  text-align: left;
+  margin-top: 24px;
+}
+
+.form-actions button {
+  background: #059669;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.form-actions button:hover {
+  background: #047857;
+}

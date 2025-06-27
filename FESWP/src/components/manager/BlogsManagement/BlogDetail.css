@@ -1,0 +1,78 @@
+.blog-detail-wrapper {
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.blog-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.blog-detail-left {
+  flex: 1;
+}
+
+.blog-detail-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.blog-detail-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+/* Nút quay lại */
+.blog-detail-btn.back {
+  background-color: #00986f;
+}
+.blog-detail-btn.back:hover {
+  background-color: #007a5b;
+}
+
+/* Nút xác nhận */
+.blog-detail-btn.green {
+  background-color: #00986f;
+  color: white;
+}
+.blog-detail-btn.green:hover {
+  background-color: #007a5b;
+}
+
+/* Nút từ chối */
+.blog-detail-btn.red {
+  background-color: #f44336;
+}
+.blog-detail-btn.red:hover {
+  background-color: #d32f2f;
+}
+
+.blog-detail-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-detail-meta p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.blog-detail-content {
+  font-size: 16px;
+  color: #333;
+  margin-top: 16px;
+  line-height: 1.6;
+}

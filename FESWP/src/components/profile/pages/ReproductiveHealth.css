@@ -1,0 +1,152 @@
+/* ReproductiveHealth.css */
+.info-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.info-header {
+  background: linear-gradient(to right, #10b981, #059669);
+  color: white;
+  padding: 24px 32px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.info-header h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.info-header p {
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.info-form {
+  padding: 32px;
+}
+
+.secure-alert {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.form-col {
+  flex: 1;
+  min-width: 240px;
+}
+
+.info-form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.info-form input[type="date"],
+.info-form input[type="number"] {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.2s;
+}
+
+.info-form input:focus {
+  border-color: #10b981;
+  outline: none;
+}
+
+h3 {
+  font-size: 17px;
+  margin: 24px 0 16px;
+  color: #111;
+}
+
+.reminder-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reminder-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #f9fafb;
+  padding: 12px 16px;
+  border-radius: 10px;
+}
+
+.reminder-item label {
+  margin-top: 4px;
+}
+
+.reminder-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #0f172a;
+  cursor: pointer;
+}
+
+.reminder-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.reminder-item strong {
+  font-size: 15px;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.reminder-item p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+.cycle-history {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.cycle-history li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #111;
+}
+
+.cycle-history li span {
+  color: #555;
+  font-size: 14px;
+}

@@ -1,0 +1,105 @@
+.dfooter-container {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 20px;
+}
+
+.schedule-card,
+.notification-card {
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+}
+
+.schedule-card h3,
+.notification-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.schedule-time {
+  font-weight: 600;
+  color: #3b82f6;
+  width: 60px;
+}
+
+.schedule-name {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.schedule-status {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.status-done {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.status-progress {
+  background-color: #e0f2fe;
+  color: #2563eb;
+}
+
+.status-upcoming {
+  background-color: #fef9c3;
+  color: #ca8a04;
+}
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-item {
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.notification-item strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.notification-item.blue {
+  background-color: #eef4ff;
+  border-left: 4px solid #3b82f6;
+}
+
+.notification-item.green {
+  background-color: #ecfdf5;
+  border-left: 4px solid #10b981;
+}
+
+.notification-item.orange {
+  background-color: #fff7ed;
+  border-left: 4px solid #f97316;
+}

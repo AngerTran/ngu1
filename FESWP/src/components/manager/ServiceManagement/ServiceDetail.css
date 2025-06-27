@@ -1,0 +1,40 @@
+.service-detail {
+  background-color: white;
+  padding: 24px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.service-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-detail-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.btn.green {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn.red {
+  background-color: #ef4444;
+  color: white;
+}
+
+.service-meta p {
+  margin: 8px 0;
+}

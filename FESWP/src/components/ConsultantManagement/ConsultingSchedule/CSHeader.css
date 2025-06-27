@@ -1,0 +1,17 @@
+.cs-header-container {
+  padding: 24px;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cs-header-title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cs-header-title p {
+  color: #6b7280;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}

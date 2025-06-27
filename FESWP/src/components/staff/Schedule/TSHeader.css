@@ -1,0 +1,30 @@
+.ts-header {
+  padding: 1.5rem;
+  background: #f9fafb;
+}
+
+.ts-header-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ts-header-icon {
+  color: #2563eb;
+  width: 40px;
+  height: 40px;
+}
+
+.ts-header-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #111827;
+}
+
+.ts-header-title p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #6b7280;
+}

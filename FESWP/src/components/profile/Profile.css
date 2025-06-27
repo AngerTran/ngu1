@@ -1,0 +1,11 @@
+.profile-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9fdfb;
+}
+
+.profile-content {
+  flex: 1;
+  margin-left: 280px;
+  padding: 40px;
+}

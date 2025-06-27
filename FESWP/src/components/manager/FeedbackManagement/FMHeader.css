@@ -1,0 +1,20 @@
+.fm-header {
+  padding: 24px 0;
+  margin-bottom: 20px;
+}
+
+.fm-header-top {
+  margin-bottom: 16px;
+}
+
+.fm-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.fm-subtitle {
+  font-size: 15px;
+  color: #6b7280;
+}

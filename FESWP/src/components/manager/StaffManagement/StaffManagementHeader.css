@@ -1,0 +1,53 @@
+.smh-container {
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Header chứa tiêu đề và nút */
+.smh-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.smh-header-text {
+  flex: 1;
+}
+
+.smh-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.smh-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.smh-top-right-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Nút thêm nhân viên */
+.smh-add-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background-color: #111827;
+  color: white;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.smh-add-btn:hover {
+  background-color: #1f2937;
+}

@@ -1,0 +1,76 @@
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.overview-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.overview-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.05);
+}
+
+.overview-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.overview-title {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.overview-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.25rem 0;
+  color: #111827;
+}
+
+.overview-change {
+  font-size: 0.875rem;
+  color: #059669; /* xanh lá đậm hơn */
+  margin-top: 0.25rem;
+}
+
+.overview-icon-wrapper {
+  background-color: #f3f4f6;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 4px #fff;
+}
+
+.icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.icon.blue {
+  color: #3b82f6;
+}
+
+.icon.green {
+  color: #10b981;
+}
+
+.icon.purple {
+  color: #8b5cf6;
+}
+
+.icon.orange {
+  color: #f97316;
+}
