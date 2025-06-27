@@ -25,4 +25,12 @@ public interface UserRepository extends JpaRepository<Users, Integer> {
     @Query("SELECT u FROM Users u JOIN u.role r WHERE r.roleName = :roleName")
     List<Users> findAllByRoleName(@Param("roleName") String roleName);
 
+    @Query("SELECT COUNT(u) FROM Users u")
+    int countAllUsers();
+
+    @Query("SELECT COUNT(u) FROM Users u WHERE u.role.roleName = 'CUSTOMER'")
+    int countCustomers();
+
+    @Query("SELECT COUNT(u) FROM Users u WHERE u.role.roleName = 'CONSULTANT'")
+    int countConsultants();
 }

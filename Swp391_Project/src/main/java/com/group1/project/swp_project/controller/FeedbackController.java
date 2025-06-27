@@ -22,15 +22,15 @@ public class FeedbackController {
     }
 
     @GetMapping("/consultant/{consultantId}")
-    public List<FeedbackDTO> getFeedbacksByConsultant(@PathVariable int consultantId) {
-        return feedbackService.getFeedbacksByConsultant(consultantId);
+    public ResponseEntity<List<FeedbackDTO>> getFeedbacksByConsultant(@PathVariable int consultantId) {
+        var c = this.feedbackService.getFeedbacksByConsultant(consultantId);
+        return ResponseEntity.ok().body(c);
     }
 
     @PostMapping
     public ResponseEntity<String> createFeedback(
-            @AuthenticationPrincipal Users user, // Lấy người dùng đang đăng nhập
-            @RequestBody CreateFeedbackRequest request // Nhận JSON từ body
-    ) {
+            @AuthenticationPrincipal Users user,
+            @RequestBody CreateFeedbackRequest request) {
         feedbackService.createFeedback(request, user);
         return ResponseEntity.ok("Feedback submitted successfully!");
     }

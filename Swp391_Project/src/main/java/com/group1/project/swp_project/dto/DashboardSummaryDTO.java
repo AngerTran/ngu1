@@ -10,7 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DashboardSummaryDTO {
-    private long totalUsers;
-    private long totalCustomers;
-    private long totalConsultants;
+    private int totalUsers;
+    private int totalCustomers;
+    private int totalConsultants;
 }
