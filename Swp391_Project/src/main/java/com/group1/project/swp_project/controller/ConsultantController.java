@@ -2,6 +2,8 @@ package com.group1.project.swp_project.controller;
 
 import com.group1.project.swp_project.dto.ConsultantDTO;
 import com.group1.project.swp_project.service.ConsultantService;
+
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,9 +20,10 @@ public class ConsultantController {
     }
 
     @GetMapping("/consultants")
-    public List<ConsultantDTO> getAllConsultants(
+    public ResponseEntity<List<ConsultantDTO>> getAllConsultants(
             @RequestParam(required = false) String specialty,
             @RequestParam(required = false) String gender) {
-        return consultantService.getAllConsultants(specialty, gender);
+        var c = this.consultantService.getAllConsultants(specialty, gender);
+        return ResponseEntity.ok().body(c);
     }
 }
