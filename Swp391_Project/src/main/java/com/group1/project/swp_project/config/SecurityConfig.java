@@ -63,6 +63,8 @@ public class SecurityConfig {
                                 "/api/auth/register",
                                 "/api/auth/**")
                         .permitAll()
+                        .requestMatchers("/api/questions/ask").hasRole("USER")
+                        .requestMatchers("/api/questions/answer").hasRole("CONSULTANT")
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
