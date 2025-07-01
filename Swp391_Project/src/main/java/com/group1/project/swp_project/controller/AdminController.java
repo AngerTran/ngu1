@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import com.group1.project.swp_project.dto.DashboardSummaryDTO;
 import com.group1.project.swp_project.service.DashboardService;
 
-@Tag(name = "2. Management (Admin)", description = "APIs for Admin to manage user accounts")
+@Tag(name = "Management (Admin)", description = "APIs for Admin to manage user accounts")
 @RestController
 @RequestMapping("/api/auth/admin")
 public class AdminController {

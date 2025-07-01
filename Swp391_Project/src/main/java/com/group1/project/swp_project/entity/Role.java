@@ -25,4 +25,5 @@ public class Role {
     @Lob
     @Column(name = "description")
     private String description;
+
 }

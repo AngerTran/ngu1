@@ -1,8 +1,18 @@
 import { BarChart3, Calendar, MessageSquare, Star, LogOut, Heart, MessageCircle } from 'lucide-react';
 import './ConsultantSidebar.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 
 export const ConsultantSidebar = () => {
+  const { setUser } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    setUser(null);
+    localStorage.removeItem('user');
+    navigate('/');
+  };
+
   return (
     <aside className="sidebar">
       <div className="sidebar-top">
@@ -28,7 +38,9 @@ export const ConsultantSidebar = () => {
       </div>
 
       <div className="sidebar-footer">
-        <Link to="/logout" className="nav-link"><LogOut /> Đăng xuất</Link>
+        <button className="nav-link logout-btn" onClick={handleLogout}>
+          <LogOut /> Đăng xuất
+        </button>
       </div>
     </aside>
   );

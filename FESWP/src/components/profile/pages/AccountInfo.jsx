@@ -22,7 +22,7 @@ const AccountInfo = () => {
   useEffect(() => {
     const fetchAccountInfo = async () => {
       try {
-        const res = await axios.get('http://localhost:8080/api/auth/profileuser', {
+        const res = await axios.get('http://localhost:8080/api/auth/profile', {
           headers: {
             Authorization: `Bearer ${user?.token}`
           }
@@ -33,8 +33,8 @@ const AccountInfo = () => {
         setAccountData({
           username: data.email || '',
           createdAt: data.createdAt || '',
-          role: convertRole(data.role),
-          status: data.active === false ? 'Không hoạt động' : 'Hoạt động'
+          role: data.roleName || user?.role?.roleName || 'Chưa xác định',
+          status: data.enabled === false ? 'Không hoạt động' : 'Hoạt động'
         });
       } catch (err) {
         console.error('❌ Lỗi khi lấy thông tin tài khoản:', err.response?.data || err.message);
@@ -47,11 +47,11 @@ const AccountInfo = () => {
 
   const convertRole = (role) => {
     switch (role) {
-      case 'Admin': return 'Quản trị viên';
-      case 'Manager': return 'Quản lý';
-      case 'Staff': return 'Nhân viên';
-      case 'Consultant': return 'Tư vấn viên';
-      case 'Customer': return 'Khách hàng';
+      case 'ADMIN': return 'Quản trị viên';
+      case 'MANAGER': return 'Quản lý';
+      case 'STAFF': return 'Nhân viên';
+      case 'CONSULTANT': return 'Tư vấn viên';
+      case 'CUSTOMER': return 'Khách hàng';
       default: return role;
     }
   };
@@ -71,10 +71,11 @@ const AccountInfo = () => {
 
     try {
       await axios.put(
-        'http://localhost:8080/api/auth/change-password',
+        'http://localhost:8080/api/auth/profile/password',
         {
           currentPassword: passwords.currentPassword,
-          newPassword: passwords.newPassword
+          newPassword: passwords.newPassword,
+          confirmPassword: passwords.confirmPassword
         },
         {
           headers: {
@@ -101,7 +102,7 @@ const AccountInfo = () => {
       <div className="info-form">
         <div className="form-row">
           <div className="form-col">
-            <label>Tên đăng nhập</label>
+            <label>Email đăng nhập</label>
             <input value={accountData.username} disabled />
           </div>
           <div className="form-col">

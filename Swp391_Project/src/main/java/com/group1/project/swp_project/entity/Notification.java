@@ -16,7 +16,7 @@ public class Notification {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private Users user; // Đổi Users thành entity user của bạn
+    private Users user;
     @Column(name = "type", columnDefinition = "nvarchar(200)")
     private String type;
     @Column(name = "content", columnDefinition = "nvarchar(200)")

@@ -17,7 +17,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
-@Tag(name = "5. Quản lý Blog", description = "Các API để tạo và quản lý bài viết")
+@Tag(name = "Quản lý Blog", description = "Các API để tạo và quản lý bài viết")
 @RestController
 @RequestMapping("/api/management/blogs")
 @SecurityRequirement(name = "Bearer Authentication")

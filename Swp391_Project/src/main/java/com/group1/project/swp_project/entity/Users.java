@@ -61,7 +61,4 @@ public class Users {
         this.enabled = enabled;
     }
 
-    public enum AccountType {
-        CUSTOMER, CONSULTANT
-    }
 }

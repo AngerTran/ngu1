@@ -16,7 +16,6 @@ const ConsultantContent = () => {
   const [consultants, setConsultants] = useState([]);
   const perPage = 6;
 
-  // ✅ Fetch data từ API mỗi khi filter thay đổi
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -29,7 +28,7 @@ const ConsultantContent = () => {
         const data = response.data;
 
         setConsultants(data);
-        setPage(1); // Reset về trang đầu
+        setPage(1);
       } catch (err) {
         console.error('❌ Lỗi lấy danh sách tư vấn viên:', err);
       }
@@ -52,8 +51,8 @@ const ConsultantContent = () => {
       />
 
       <div className={viewMode === 'grid' ? 'consultant-grid' : 'consultant-list'}>
-        {paginated.map((doc, idx) => (
-          <ConsultantCard key={idx} doc={doc} viewMode={viewMode} />
+        {paginated.map((consultant, idx) => (
+          <ConsultantCard key={idx} consultant={consultant} viewMode={viewMode} />
         ))}
       </div>
 

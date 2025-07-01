@@ -1,0 +1,258 @@
+/* === HEADER === */
+.tsm-header {
+  background-color: #f8f9fa;
+  padding: 24px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.tsm-header-top {
+  margin-bottom: 20px;
+}
+
+.tsm-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #1d1d1f;
+}
+
+.tsm-subtitle {
+  font-size: 16px;
+  color: #555;
+}
+
+.tsm-add-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: #0d1b2a;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tsm-add-btn:hover {
+  background-color: #1c2d3f;
+}
+
+/* === BODY === */
+.tsm-table-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.tsm-table-container h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.tsm-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tsm-table th,
+.tsm-table td {
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.tsm-table th {
+  background-color: #f7f7f8;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.tsm-table tr:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.tsm-table td {
+  font-size: 14px;
+  color: #222;
+}
+
+.tsm-meta {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* ✅ Badge */
+.tsm-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.tsm-badge.gray {
+  background-color: #e5e5e5;
+  color: #555;
+}
+
+/* ✅ Actions */
+.tsm-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tsm-view-btn,
+.tsm-delete-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Xem */
+.tsm-view-btn {
+  background-color: #10b981;
+  color: white;
+}
+.tsm-view-btn:hover {
+  background-color: #059669;
+}
+
+/* Xóa */
+.tsm-delete-btn {
+  background-color: #ef4444;
+  color: white;
+}
+.tsm-delete-btn:hover {
+  background-color: #dc2626;
+}
+
+/* ✅ Pagination */
+.tsm-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.tsm-pagination button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.tsm-pagination button:hover:not(:disabled) {
+  background-color: #e5e5e5;
+}
+
+.tsm-pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tsm-pagination button.active {
+  background-color: #0056d2;
+  color: white;
+  font-weight: 600;
+  border-color: #0056d2;
+}
+
+/* ✅ Tooltip */
+.tsm-description {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tsm-tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.tsm-tooltip .tsm-tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  max-width: 400px;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s;
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+.tsm-tooltip .tsm-tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.tsm-tooltip:hover .tsm-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ✅ Status badge */
+.status-badge {
+  padding: 3px 14px;
+  border-radius: 12px;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 13px;
+  background: #eee;
+  color: #222;
+  border: 1px solid #bbb;
+}
+.status-badge.green {
+  background: #e6fff0;
+  color: #13ce66;
+  border: 1px solid #13ce66;
+}
+.status-badge.red {
+  background: #ffeaea;
+  color: #e63946;
+  border: 1px solid #e63946;
+}
+.status-badge.yellow {
+  background: #fff8e1;
+  color: #e0ac07;
+  border: 1px solid #e0ac07;
+}
+.status-badge.gray {
+  background: #eee;
+  color: #666;
+  border: 1px solid #bbb;
+}

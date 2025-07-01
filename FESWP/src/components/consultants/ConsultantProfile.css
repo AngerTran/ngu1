@@ -1,0 +1,68 @@
+.consultant-profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+.consultant-profile-card {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.consultant-profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #4f46e5;
+}
+
+.consultant-profile-name {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1f2937;
+}
+
+.consultant-profile-details {
+    text-align: left;
+}
+
+.consultant-profile-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #374151;
+    display: flex;
+    align-items: center;
+}
+
+.consultant-profile-details p strong {
+    min-width: 120px;
+    display: inline-block;
+    color: #111827;
+}
+
+.consultant-profile-details p svg {
+    margin-right: 8px;
+    color: #4f46e5;
+}
+
+@media (max-width: 600px) {
+    .consultant-profile-card {
+        padding: 30px 20px;
+    }
+
+    .consultant-profile-name {
+        font-size: 24px;
+    }
+}

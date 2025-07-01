@@ -18,7 +18,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@Tag(name = "1. Authentication", description = "APIs for User Registration, Login, and Verification")
+@Tag(name = "Authentication", description = "APIs for User Registration, Login, and Verification")
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {

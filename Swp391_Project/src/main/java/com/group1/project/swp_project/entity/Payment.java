@@ -8,6 +8,9 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+import com.group1.project.swp_project.util.PaymentMethod;
+import com.group1.project.swp_project.util.PaymentStatus;
+
 @Entity
 @Table(name = "Payment")
 @Getter
@@ -62,11 +65,4 @@ public class Payment {
         updatedAt = LocalDateTime.now();
     }
 
-    public enum PaymentMethod {
-        MOMO, CASH
-    }
-
-    public enum PaymentStatus {
-        PENDING, COMPLETED, FAILED, REFUNDED
-    }
 }

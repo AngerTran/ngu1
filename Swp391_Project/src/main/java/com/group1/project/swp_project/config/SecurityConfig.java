@@ -56,15 +56,15 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .cors(cors -> cors.configurationSource(corsConfigurationSource())) // bật CORS cho API
                 .authorizeHttpRequests(authz -> authz
-                        .requestMatchers("/**",
+                        .requestMatchers(
                                 "/api/public/**",
                                 "/api/blogs/**",
                                 "/api/auth/login",
-                                "/api/auth/register",
-                                "/api/auth/**")
+                                "/api/auth/register")
                         .permitAll()
-                        .requestMatchers("/api/questions/ask").hasRole("USER")
-                        .requestMatchers("/api/questions/answer").hasRole("CONSULTANT")
+                        .requestMatchers("/api/auth/**").authenticated()
+                        .requestMatchers("/api/schedules/consultant/**/availability").authenticated()
+                        .requestMatchers("/api/schedules/**").hasAuthority("Consultant")
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);

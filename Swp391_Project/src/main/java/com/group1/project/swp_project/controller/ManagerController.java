@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "3.Management (Manager)", description = "APIs for Manager to manage staff and consultants")
+@Tag(name = "Management (Manager)", description = "APIs for Manager to manage staff and consultants")
 @RestController
 @RequestMapping("/api/auth/manager")
 @PreAuthorize("hasAuthority('Manager')")

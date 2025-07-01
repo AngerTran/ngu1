@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import com.group1.project.swp_project.util.AppointmentStatus;
 
 @Entity
 @Table(name = "Appointment")
@@ -68,7 +69,4 @@ public class Appointment {
         updatedAt = LocalDateTime.now();
     }
 
-    public enum AppointmentStatus {
-        PENDING, CONFIRMED, COMPLETED, CANCELLED, NO_SHOW
-    }
 }

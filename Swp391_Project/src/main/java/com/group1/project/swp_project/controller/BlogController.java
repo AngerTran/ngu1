@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "4. Blog (Công khai)", description = "Các API để xem bài viết")
+@Tag(name = "Blog (Công khai)", description = "Các API để xem bài viết")
 @RestController
 @RequestMapping("/api/blogs")
 public class BlogController {
@@ -30,7 +30,5 @@ public class BlogController {
     public ResponseEntity<BlogDetail> getBlogById(@PathVariable int id) {
         return ResponseEntity.ok(blogService.getBlogById(id));
     }
-
-
 
 }

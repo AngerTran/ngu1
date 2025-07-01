@@ -22,31 +22,28 @@ const ServiceContent = () => {
       .catch((err) => console.error("Lỗi khi tải danh sách dịch vụ:", err));
   }, []);
 
-  const filtered = services
-    .filter(service => {
-      const matchesSearch =
-        service.title.toLowerCase().includes(search.toLowerCase()) ||
-        service.description.toLowerCase().includes(search.toLowerCase());
+  // Defensive: always use array for filter
+  const filtered = Array.isArray(services)
+    ? services.filter(service => {
+        const matchesSearch =
+          service.title.toLowerCase().includes(search.toLowerCase()) ||
+          service.description.toLowerCase().includes(search.toLowerCase());
 
-      const matchesCategory =
-        category === 'Tất cả' ||
-        (category === 'Tư vấn' && service.title.includes('Tư vấn')) ||
-        (category === 'Xét nghiệm' && service.title.includes('Xét nghiệm'));
+        const matchesCategory =
+          category === 'Tất cả' ||
+          (category === 'Tư vấn' && service.title.includes('Tư vấn')) ||
+          (category === 'Xét nghiệm' && service.title.includes('Xét nghiệm'));
 
-      const priceValue = service.price || 0;
-      const matchesPrice =
-        price === 'Tất cả mức giá' ||
-        (price === 'Dưới 500k' && priceValue < 500000) ||
-        (price === '500k - 1 triệu' && priceValue >= 500000 && priceValue <= 1000000) ||
-        (price === 'Trên 1 triệu' && priceValue > 1000000);
+        const priceValue = service.price || 0;
+        const matchesPrice =
+          price === 'Tất cả mức giá' ||
+          (price === 'Dưới 500k' && priceValue < 500000) ||
+          (price === '500k - 1 triệu' && priceValue >= 500000 && priceValue <= 1000000) ||
+          (price === 'Trên 1 triệu' && priceValue > 1000000);
 
-      return matchesSearch && matchesCategory && matchesPrice;
-    })
-    .sort((a, b) => {
-      if (sortBy === 'Giá tăng dần') return a.price - b.price;
-      if (sortBy === 'Giá giảm dần') return b.price - a.price;
-      return b.reviews - a.reviews;
-    });
+        return matchesSearch && matchesCategory && matchesPrice;
+      })
+    : [];
 
   const totalPages = Math.ceil(filtered.length / perPage);
   const paginated = filtered.slice((page - 1) * perPage, page * perPage);

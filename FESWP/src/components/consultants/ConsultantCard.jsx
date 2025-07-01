@@ -1,31 +1,65 @@
-import React from 'react';
-import { Mail, Phone, User, BadgeCheck, Info } from 'lucide-react';
+import React, { useState } from 'react';
+import { Mail, Phone, Briefcase } from 'lucide-react';
+import { useAuth } from '../../context/AuthContext';
+import { Link } from 'react-router-dom';
+import BookingModal from './BookingModal';
 
-const ConsultantCard = ({ doc, viewMode }) => {
+const ConsultantCard = ({ consultant, viewMode }) => {
+  const { user } = useAuth();
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
+  if (!consultant) return null;
+
+  const getAvatarUrl = () => {
+    return consultant?.avatarUrl?.trim()
+      ? consultant.avatarUrl
+      : `https://ui-avatars.com/api/?name=${encodeURIComponent(consultant.fullName || 'User')}&background=667eea&color=fff`;
+  };
+  const handleBookingClick = () => {
+    if (!user) {
+      window.location.href = '/login';
+      return;
+    }
+    setIsBookingModalOpen(true);
+  };
+
   return (
     <div className={`consultant-card ${viewMode}`}>
-      <div className="card-top">
-        <img
-          src={doc.avatarUrl || `https://ui-avatars.com/api/?name=${encodeURIComponent(doc.fullName)}`}
-          alt={doc.fullName}
-          className="avatar"
-        />
-        <div className="badge-gender">{doc.gender ? 'Nam' : 'Nữ'}</div>
+      <div className="card-body">
+        <p><strong>Giới tính:</strong> {consultant.gender ? 'Nam' : 'Nữ'}</p>
+
+        {consultant.email && (
+          <p><Mail size={14} /> {consultant.email}</p>
+        )}
+
+        {consultant.phone && (
+          <p><Phone size={14} /> {consultant.phone}</p>
+        )}
+
+        {consultant.specialty && (
+          <p><Briefcase size={14} /> {consultant.specialty}</p>
+        )}
       </div>
 
-      <div className="card-body">
-        <h3 className="doctor-name">{doc.fullName}</h3>
-        <div className="info"><BadgeCheck size={14} /> {doc.specialty}</div>
-        <div className="info"><User size={14} /> {doc.experienceYears || 0} năm kinh nghiệm</div>
-        <div className="info"><Mail size={14} /> {doc.email}</div>
-        <div className="info"><Phone size={14} /> {doc.phone}</div>
-        <div className="description"><Info size={14} /> {doc.description || "Chưa có mô tả"}</div>
-      </div>
 
       <div className="consultant-footer">
-        <button className="solid">Xem hồ sơ</button>
-        <button className="outline">Đặt lịch</button>
+        {consultant.id && (
+          <Link to={`/consultant/${consultant.id}`} className="outline">
+            Xem hồ sơ
+          </Link>
+        )}
+
+        <button className="solid" onClick={handleBookingClick}>
+          Đặt lịch
+        </button>
       </div>
+
+      {isBookingModalOpen && (
+        <BookingModal
+          consultant={consultant}
+          onClose={() => setIsBookingModalOpen(false)}
+        />
+      )}
     </div>
   );
 };

@@ -9,6 +9,9 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import com.group1.project.swp_project.util.DayOfWeek;
+import com.group1.project.swp_project.util.ScheduleType;
+
 @Entity
 @Table(name = "consultant_schedule")
 @Getter
@@ -57,11 +60,4 @@ public class ConsultantSchedule {
     @Column(name = "session_duration_minutes")
     private Integer sessionDurationMinutes = 60; // Default 1 hour
 
-    public enum ScheduleType {
-        WEEKLY, SPECIFIC_DATE
-    }
-
-    public enum DayOfWeek {
-        MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
-    }
 }

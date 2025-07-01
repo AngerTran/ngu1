@@ -30,6 +30,8 @@ public class Profile {
     @Column(name = "full_name", length = 100, columnDefinition = "NVARCHAR(100)")
     private String fullName;
 
+    private Double consultationFee;
+
     @Column(name = "gender")
     private Boolean gender;
 
@@ -52,5 +54,11 @@ public class Profile {
 
     @Column(name = "description", columnDefinition = "TEXT")
     private String description;
+
+    @Column(name = "education", columnDefinition = "NVARCHAR(MAX)")
+    private String education;
+
+    @Column(name = "certifications", columnDefinition = "NVARCHAR(MAX)")
+    private String certifications;
 
 }

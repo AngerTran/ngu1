@@ -15,6 +15,7 @@ export const AuthProvider = ({ children }) => {
       const decoded = jwtDecode(parsed.token);
       return {
         ...parsed,
+        id: decoded.userId || decoded.Id || decoded.id || parsed.id,
         role: decoded.Role || decoded.role || parsed.role,
         name: decodeURIComponent(escape(decoded.Name || decoded.name || parsed.name || parsed.email)),
         authorities: decoded.authorities || parsed.authorities || []
@@ -24,6 +25,8 @@ export const AuthProvider = ({ children }) => {
       return null;
     }
   });
+
+  const [profile, setProfile] = useState(null); // 👈 Thêm dòng này
 
   useEffect(() => {
     if (user) {

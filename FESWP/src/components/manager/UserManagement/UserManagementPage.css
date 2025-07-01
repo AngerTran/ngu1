@@ -1,0 +1,211 @@
+/* ========== PHẦN CHUNG ========== */
+.um-container {
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+}
+
+/* ========== HEADER ========== */
+.um-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.um-header-text {
+  flex: 1;
+}
+
+.um-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.um-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.um-top-right-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.um-user-add-btn {
+  background-color: #111827;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.um-user-add-btn:hover {
+  background-color: #1f2937;
+}
+
+/* ========== TABLE & CONTENT ========== */
+.um-user-page {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  font-family: sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.um-user-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.um-user-table {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.um-table-head,
+.um-table-row {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1.5fr 1fr; /* cột thao tác đủ rộng */
+  padding: 16px 24px; /* padding trái/phải đều */
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.um-table-head {
+  background-color: #f3f4f6;
+  font-weight: bold;
+  color: #4b5563;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.um-table-row {
+  font-size: 15px;
+  background-color: white;
+  min-height: 72px; /* cao đều, không bị lệch */
+}
+
+.um-table-row > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* canh giữa dọc */
+  gap: 4px;
+}
+
+.um-status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  width: fit-content;
+}
+
+.um-status.active {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.um-status.inactive {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+/* ========== PHÂN TRANG ========== */
+.um-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.um-pagination button {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  color: #374151;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.um-pagination button:hover {
+  border-color: #9ca3af;
+  background-color: #f9fafb;
+}
+
+.um-pagination button.active {
+  background-color: #111827;
+  color: white;
+  border-color: #111827;
+}
+
+.um-pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ========== ACTION BUTTONS ========== */
+.um-action-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* hoặc center tùy ý */
+  align-items: center;
+  gap: 8px;
+}
+
+.um-view-btn,
+.um-edit-btn,
+.um-delete-btn {
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Xem - xanh lá */
+.um-view-btn {
+  background-color: #10b981;
+  color: white;
+}
+.um-view-btn:hover {
+  background-color: #059669;
+}
+
+/* Sửa - xanh dương */
+.um-edit-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+.um-edit-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Xóa - đỏ */
+.um-delete-btn {
+  background-color: #ef4444;
+  color: white;
+}
+.um-delete-btn:hover {
+  background-color: #dc2626;
+}
